@@ -12,6 +12,6 @@ The menu is draw on serial monitor but ArduinoMenu can put it on many other devi
 
 ArduinoMenu library - https://github.com/neu-rah/ArduinoMenu
 
-## You can pay me a coffee you you thins it's interesting :D
+## You can pay me a coffee you you think it's interesting :D
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/ruihfazevedo)
