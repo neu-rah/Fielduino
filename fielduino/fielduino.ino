@@ -15,7 +15,7 @@ http://www.r-site.net
 *******************************************/
 
 #include <menu.h>
-#include <menuIO/serialOut.h>
+#include <menuIO/serialIO.h>
 #include "avrTC.h"
 
 using namespace Menu;
@@ -51,7 +51,8 @@ MENU_OUTPUTS(out,MAX_DEPTH
   ,NONE//must have 2 items at least
 );\
 
-NAVROOT(nav,mainMenu,MAX_DEPTH,Serial,out);
+serialIn in(Serial);
+NAVROOT(nav,mainMenu,MAX_DEPTH,in,out);
 
 void setup() {
   //adc.ps=avrADC::clk_4;//accelerate ADC converter, setting prescale
